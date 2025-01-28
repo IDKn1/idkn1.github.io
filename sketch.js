@@ -4,12 +4,14 @@ let squareSize = 50;
 let fadeAmt = 10;
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	let canvas = createCanvas(windowWidth, windowHeight);
+	canvas.parent("hero");
 	background(20);
 	//  position and speed
 	// divide by 2 roughly centers it
 	x = width / 2;
 	y = height / 2;
+	console.log("Width: " + x + ", Height: " + y);
 	speedX = 5;
 	speedY = 5;
 }

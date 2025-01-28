@@ -1,0 +1,79 @@
+/* Global Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: Roboto, Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: aliceblue;
+	font-size: 1rem;
+	line-height: 1.5;
+	scrollbar-gutter: stable both-edges;
+	position: relative;
+	overflow: hidden;
+}
+
+#hero {
+	position: absolute;
+	z-index: -1;
+}
+
+.col-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.col-2 ul li,
+.col-1 {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding-top: 1rem;
+	position: relative;
+	align-items: baseline;
+	font-size: 1.6rem;
+	font-weight: 700;
+	padding-right: 2rem;
+}
+
+.col-1,
+.col-2 {
+	padding-left: 1rem;
+}
+
+.col-2 ul li a,
+.col-1 a {
+	text-decoration: none;
+	color: aliceblue;
+}
+
+.col-2 ul li:hover a,
+.col-1 a:hover {
+	color: coral;
+}
+.project-image {
+	top: 100%;
+	position: absolute;
+	left: 0;
+	/* right: -25%; */
+	margin: 0 auto;
+	opacity: 0;
+	transition: opacity 300ms linear;
+	pointer-events: none;
+}
+
+ul li:hover > .project-image {
+	opacity: 1;
+	z-index: 2;
+}
