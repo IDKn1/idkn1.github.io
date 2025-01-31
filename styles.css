@@ -71,10 +71,11 @@ body {
 	opacity: 0;
 	transition: opacity 300ms linear;
 	pointer-events: none;
-	max-width: 400px;
+	width: 400px;
 }
 
 ul li:hover > .project-image {
 	opacity: 1;
 	z-index: 2;
+	max-width: 400px;
 }
