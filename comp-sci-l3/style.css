@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* body {
+  font-family: Roboto, Arial, sans-serif;
+
+  min-height: 100vh;
+  color: rgb(17, 127, 224);
+  font-size: 1rem;
+  line-height: 1.5;
+  scrollbar-gutter: stable both-edges;
+  position: relative;
+  overflow: hidden;
+} */
