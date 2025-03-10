@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  /* padding: 1rem; */
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.gui {
+  padding: 2rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: auto;
+}
+
+.heroImg {
+  grid-column: 1 / 4;
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.fullQuote {
+  grid-column: 2/3;
+  min-width: 60ch;
+  justify-self: center;
+  padding-block: 2rem;
+  font-size: 1.5rem;
+}
+
+.author {
+  color: darkslategrey;
+}
+
+.twoCol {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-block: 2rem;
+}
+
+.twoCol-img {
+  grid-column: 2/3;
+  width: 100%;
+}
+.about {
+  grid-template-columns: 1fr 2fr;
+  display: grid;
+  grid-column: 2/3;
+  padding-block: 2rem;
+}
+
+.about img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
