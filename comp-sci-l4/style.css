@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  overflow: hidden;
+}
+
+img {
+  max-width: 80%;
+  height: 80vh;
+}
