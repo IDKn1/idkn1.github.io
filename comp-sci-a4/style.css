@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+/* color variables to change / fallback if javascript doesn't change */
+:root {
+  --primary-color: #ff6347; /* Tomato */
+  --secondary-color: #4caf50; /* Green */
+  --text-color: #333333; /* Dark text */
+  --background-color: #f4f4f4; /* Light gray */
+  --contrast-text-color: #ffffff; /* White */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+nav {
+  background-color: var(--primary-color);
+  padding: 1rem 1rem;
+  color: var(--contrast-text-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  text-align: center;
+}
+
+nav ul li a {
+  color: var(--contrast-text-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.hero {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  color: var(--contrast-text-color);
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+}
+
+.content {
+  background-color: var(--contrast-text-color);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+
+.content h3 {
+  color: var(--primary-color);
+}
+
+.content p {
+  font-size: 1rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+  color: var(--contrast-text-color);
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Style for the container of color pickers */
+.color-picker-container {
+  width: 100%;
+  padding: 1rem;
+  /* background-color: #f1f1f1; */
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Style for each color picker wrapper */
+.picker-wrapper {
+  padding-inline: 0.5rem;
+  word-wrap: normal;
+  max-width: 10ch;
+  text-align: center;
+}
+
+/* Style for the title above each color picker */
+.picker-title {
+  font-size: 16px;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
